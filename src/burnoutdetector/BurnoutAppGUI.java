@@ -27,7 +27,7 @@ public class BurnoutAppGUI extends JFrame {
         logoutBtn.setBackground(new Color(255, 150, 150));
         inputPanel.add(logoutBtn);
 
-        inputPanel.add(new JLabel(" Date (DD-MM-YYYY):")); dateF = new JTextField("01-05-2024"); inputPanel.add(dateF);
+        inputPanel.add(new JLabel(" Date (DD-MM-YYYY):")); dateF = new JTextField("06-05-2026"); inputPanel.add(dateF);
         inputPanel.add(new JLabel(" Study Hours (+10):")); studyF = new JTextField("0"); inputPanel.add(studyF);
         inputPanel.add(new JLabel(" Screen Time (-15):")); screenF = new JTextField("0"); inputPanel.add(screenF);
         inputPanel.add(new JLabel(" Hobby Hours (+8):")); hobbyF = new JTextField("0"); inputPanel.add(hobbyF);

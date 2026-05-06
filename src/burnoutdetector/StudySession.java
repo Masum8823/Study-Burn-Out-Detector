@@ -17,9 +17,18 @@ public class StudySession {
     }
 
     public double getNetScore() {
-        double score = (stu * 10) + (scr * -15) + (hobb * 8) + (walk * 12) + (wst * -5) + (slp * 5);
+        double studyPts = new StudyActivity(stu).calculatePoints();
+        double screenPts = new ScreenActivity(scr).calculatePoints();
+        double hobbyPts = new LeisureActivity(hobb).calculatePoints();
+        double wastePts = new WasteActivity(wst).calculatePoints();
+        double walkPts = new WalkingActivity(walk).calculatePoints();
+
+        double sleepPts = slp * 5; 
+
         int prayerScore = (f + d + a + m + i) * 5;
-        return score + prayerScore;
+        
+        return studyPts + screenPts + hobbyPts + wastePts + walkPts + sleepPts + prayerScore;
+
         }
 
     public int getPrayerCount() { 
